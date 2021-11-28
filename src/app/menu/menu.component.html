@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Titre du document</title>
+  </head>
+  <body>
+    <section id="menu" class="our-menu">
+      <div class="container">
+        <h1 class="header-txt">Our Menu</h1>
+        <div class="divider"></div>
+      <ul>
+        <li><a class="btnfos-2" (click)="onClick(0)" >Starters</a></li>
+        <li><a class="btnfos-2" (click)="onClick(1)" >Main Dishes</a></li>
+        <li><a class="btnfos-2" (click)="onClick(2)">Drinks</a></li>
+        <li><a class="btnfos-2" (click)="onClick(3)">Desserts</a></li>
+      </ul>
+      </div>
+    </section>
+    <app-starters *ngIf="tabIndex ===0"></app-starters>
+    <app-main-dishes *ngIf="tabIndex ===1"></app-main-dishes>
+    <app-drinks *ngIf="tabIndex ===2"></app-drinks>
+    <app-desserts *ngIf="tabIndex ===3"></app-desserts>
+  </body>
+</html>

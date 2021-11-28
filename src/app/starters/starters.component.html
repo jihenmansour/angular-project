@@ -1,0 +1,10 @@
+<ul class="card-list" >
+  <li class="card-item" style="width: 18rem" *ngFor="let Starter of Starters" >
+    <img class="card-image-top" src={{Starter.image}} style="width: 250px;">
+    <div class="card-body">
+      <h2 class="card-title">{{Starter.name}}</h2>
+      <p class="card-title2" id="price">{{Starter.price}}</p>
+      <p class="card-text">{{Starter.description}}</p>
+    </div>
+  </li>
+</ul>

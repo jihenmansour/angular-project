@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Titre du document</title>
+  </head>
+  <body>
+    <div class="contact_field">
+      <div class="divider1"></div>
+      <div class="title1">For Inquires</div>
+      <div class="description">123-456-7890 | info@mysite.com</div>
+
+
+
+        <div class='contact'>
+          <form novalidate [formGroup]="feedbackForm" autocomplete="off">
+            <p>
+              <input  formControlName="name" type="text" name='name' placeholder=" ">
+              <label for="name" class="label-name">
+                <span class="contt-name">Name</span>
+               </label>
+              <label class="error" *ngIf="feedbackForm.get('name').hasError('required') && feedbackForm.get('name').touched">Name is required</label>
+              <label *ngIf="feedbackForm.get('name').hasError('minlength') && feedbackForm.get('name').touched">Min length is 2</label>
+            </p>
+
+    
+            <p>
+              <input formControlName="lastname" type="text" name='lastname' placeholder=" "> 
+              <label for="name" class="label-name">
+                <span class="contnt-name">Last Name</span>
+               </label>
+              <label *ngIf="feedbackForm.get('lastname').hasError('required') && feedbackForm.get('lastname').touched">Last name is required</label>
+              <label *ngIf="feedbackForm.get('lastname').hasError('minlength') && feedbackForm.get('lastname').touched">Min length is 2</label>
+            </p>
+    
+            <p>
+              <input formControlName="email" type="email" name='email' placeholder=" ">
+              <label for="name" class="label-name">
+                <span class="contt-name">Email</span>
+               </label>
+              <label *ngIf="feedbackForm.get('email').hasError('required') && feedbackForm.get('email').touched">Email is required</label>
+              <label *ngIf="feedbackForm.get('email').hasError('email') && feedbackForm.get('email').touched">Invalid email</label> 
+            </p>
+    
+            <p>
+              <input formControlName="phonenum" type="text" name='phone' placeholder=" ">
+              <label for="name" class="label-name">
+                <span class="contnt-name" style="right: 630px;">Phone Number</span>
+               </label> 
+              <label *ngIf="feedbackForm.get('phonenum').hasError('required') && feedbackForm.get('phonenum').touched">Phone number is required</label>
+              <label *ngIf="feedbackForm.get('phonenum').hasError('maxlength') && feedbackForm.get('phonenum').touched">Invalid phone number</label>
+            </p>
+    
+              <p class="full">
+              <textarea name="message" rows="3" style="width: 100%;" placeholder="Message" ></textarea> 
+              </p>
+            
+    
+            <p class='full'>
+              <button >Submit</button>
+            </p>
+          </form>
+        </div>
+        <div class="description2" >500 Terry Francois, San Francisco,CA<br>
+            94158</div>
+
+    </div>
+      
+  </body>
+</html>

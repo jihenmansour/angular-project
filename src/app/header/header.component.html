@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classi Responsive Navbar</title>
+    <!-- Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+<body>
+
+    <nav>
+        <input type="checkbox" id="check">
+        <label class="logo">Hallely</label>
+        <img src="/assets/header1.jpg">
+        <ul>
+            <li><a class="active">Home</a></li>
+            <li><a routerLink="/menu"  (click)="toMenu()" >Menu</a></li>
+            <li><a routerLink="/specials"  (click)="toSpecials()" >Specials</a></li>
+            <li><a routerLink="/contact" (click)="toContact()">Contact</a></li>
+        </ul>
+        <button class="button" routerLink="/reservation" (click)="toReservation()">Book A Table</button>
+    </nav>
+    
+</body>
+</html>
+
+

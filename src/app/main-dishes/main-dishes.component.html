@@ -1,0 +1,10 @@
+<ul class="card-list" >
+  <li class="card-item" style="width: 18rem" *ngFor="let MainDish of MainDishes" >
+    <img class="card-image-top" src={{MainDish.image}} style="width: 250px;">
+    <div class="card-body">
+      <h2 class="card-title">{{MainDish.name}}</h2>
+      <p class="card-title2" id="price">{{MainDish.price}}</p>
+      <p class="card-text">{{MainDish.description}}</p>
+    </div>
+  </li>
+</ul>

@@ -1,0 +1,72 @@
+<div class="block">
+  <div class="inner inner1"></div>
+  <div class="inner inner2">Make A Reservation</div>
+  <div class="inner inner3">Mauris rhoncus aenean vel elit scelerisque mauris 
+    pellentesque. 
+    Pretium quam vulputate dignissim suspendisse in est ante in 
+    nibh. 
+    Scelerisque in dictum non consectetur 
+    a erat nam at lectus.</div>
+<div class="container">
+<div class="contact-block">
+  <form id="contactForm" novalidate="true" autocomplete="off">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="col-md-12">
+          <input id="input_date"
+          name="date" type="text" class="
+          form-control"
+           data-error="Please enter Date" placeholder="Name ">
+           <label for="name" class="label-name">
+          </label>
+           <mat-form-field  appearance="fill" >
+            
+
+          <!-- #docregion toggle -->
+            <input class="matInput" matInput [matDatepicker]="picker"placeholder="Choose a date">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          <!-- #enddocregion toggle -->
+          </mat-form-field>
+
+        </div>
+      </div>
+      <div class="col-md-6" style="margin-left: 80px;">
+        <div class="col-md-12">
+          <input id="input_date"
+          name="date" type="text" class="
+          form-control"
+           data-error="Please enter Date" placeholder=" Pone number">
+           <label for="name" class="label-name">
+          </label>
+          <div class="col-md-12">
+          <input id="input_date"
+          name="date" type="text" class="
+          form-control"
+           data-error="Please enter Date" placeholder=" Time ">
+           <label for="name" class="label-name">
+          </label>
+        </div>
+        </div>
+      </div>
+ 
+      <div class="col-md-6" style="margin-left: 80px;">
+        <div class="col-md-12" style="margin-top: 112.5px;">
+          <select class="form-control" required >
+            <option hidden  selected value=""  >Select District/City</option>
+            <option *ngFor="let tab of tabsize" [value]="tab.id">
+              {{tab.name}}
+            </option>
+          </select>
+      </div>
+      </div>
+
+
+
+    </div>
+    <button id="bt">Book A Table</button>
+  </form>
+</div>
+</div>
+      
+</div>

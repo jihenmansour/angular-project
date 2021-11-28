@@ -1,0 +1,87 @@
+*{
+    box-sizing: inherit;
+}
+body{
+    line-height: 1.5;
+}
+.our-menu{
+    padding: 0.125rem;
+}
+section{
+    display: block;
+}
+.container{
+    height: 100%;
+    margin: 0;
+}
+.header-txt{
+    display: block;
+}
+h1{
+    text-align: center;
+    color: #2E266F;
+    font-family: Poppins;
+    font-weight: 550;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin-top: 1.5rem;
+    margin-bottom: -1.2rem;
+}
+
+.divider{
+    margin-bottom: 1rem;
+}
+.specials{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width:500px;
+    font-size: 14px;
+    color: #707070;
+    font-family: Poppins;
+}
+
+
+
+.card-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -10px;
+    padding: 0;
+    justify-content: center;
+    width: 100%;
+  
+  }
+  
+    .card-item {
+      width: 30%;
+      height: 150px;
+      margin: 80px;
+      padding: 20px;
+    }
+    
+  .card-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Poppins;
+    font-weight:550;
+    font-size: 17px;
+    color: #31258b;
+  
+  }
+  
+  .card-text{
+    font-family: Poppins;
+    font-weight: Regular;
+    font-size: 14px;
+    color: #707070;
+  }
+  .card-title2{
+    float:right;
+    margin-top: -35px;
+    margin-right: 50px;
+    font-family: Poppins;
+    font-weight: Bold;
+    color: #35CD8C;
+  }

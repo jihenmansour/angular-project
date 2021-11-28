@@ -1,0 +1,10 @@
+<ul class="card-list" >
+  <li class="card-item" style="width: 18rem" *ngFor="let Dessert of Desserts" >
+    <img class="card-image-top" src={{Dessert.image}} style="width: 250px;">
+    <div class="card-body">
+      <h2 class="card-title">{{Dessert.name}}</h2>
+      <p class="card-title2" id="price">{{Dessert.price}}</p>
+      <p class="card-text">{{Dessert.description}}</p>
+    </div>
+  </li>
+</ul>

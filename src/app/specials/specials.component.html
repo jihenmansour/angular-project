@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Titre du document</title>
+  </head>
+  <body>
+    <section id="menu" class="our-menu">
+      <div class="container">
+        <h1 class="header-txt">Explore Our Specials</h1>
+        <div class="divider"></div>
+      </div>
+    </section>
+    <div class="divider"></div>
+    <div class="specials" style="text-align: center;">Mauris rhoncus aenean vel elit scelerisque mauris 
+      pellentesque. 
+      Pretium quam vulputate dignissim suspendisse in est ante in 
+      nibh. 
+      Scelerisque in dictum non consectetur 
+      a erat nam at lectus.</div>
+
+
+      <ul class="card-list" >
+        <li class="card-item" style="width: 18rem" *ngFor="let Special of Specials" >
+          <img class="card-image-top" src={{Special.image}} style="width: 250px;">
+          <div class="card-body">
+            <h2 class="card-title">{{Special.name}}</h2>
+            <p class="card-title2" id="price">{{Special.price}}</p>
+            <p class="card-text">{{Special.description}}</p>
+          </div>
+        </li>
+      </ul>
+
+
+  </body>
+</html>
